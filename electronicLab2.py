@@ -100,6 +100,18 @@ def problem7 ():
             return ("".join(newEmpty)[::-1])
     else:
         print("input must be input >= -1E6 and input <= 1E6")
+def problem8 ():
+    inputs = input("Enter input:")
+    sets = {"}":"{", ")":"(", "]":"["}
+    empty = []
+    for char in inputs:
+        if char in sets.values():
+            empty.append(char)
+        elif char in sets.keys():
+            if not empty or empty.pop() != sets[char]:
+                return False
+
+    return not empty
 
 def problem9 ():
     sentence = input("Enter a string: ")
