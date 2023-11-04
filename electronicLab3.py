@@ -20,6 +20,7 @@ def project1 ():
         result = abs((x ** 2) + (y ** 2))
         result = babil_guess(result)
         return result
+
 def babil_guess(number):
     guess = 1
     iteration = 1000000
@@ -30,4 +31,3 @@ def babil_guess(number):
         i += 1
     return guess
 
-print(project1())
