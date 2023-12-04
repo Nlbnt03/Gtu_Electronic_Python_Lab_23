@@ -68,8 +68,6 @@ def problem7(accounts, source, lira, kurus):
 
 
 def problem9 (list):
-    i = 0
-    j = 0
     new_array = []
     for x in list:
         if (x in new_array):
@@ -77,6 +75,7 @@ def problem9 (list):
             break
         new_array.append(x)
     return (None)
+
 
 
 
